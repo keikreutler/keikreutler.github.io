@@ -1,0 +1,79 @@
+@import "mixins.less";
+
+@beige-1:	#f4d8c2;
+@beige-2:	#edd2b3;
+@beige-3:	#bd9270;
+@text-color: #000;
+
+html, body {
+	background-color: #000;
+	background-image:url('/images/kk_sm.png');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    font-family: 'Heebo', sans-serif;
+    padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Archivo', sans-serif;
+	font-weight: 600;
+	letter-spacing: -1px;
+}
+
+a, a:link, a:visited, a:hover, a:focus, a:active {
+	font-weight: 400;
+	cursor: pointer;
+	text-decoration: none;
+	color: @text-color;
+	font-size: 16px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+svg {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+	text {
+		font-weight: 700;
+		letter-spacing: 2px;
+	}
+}
+
+
+.container {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+
+#window-left {
+	background: #fff;
+	position: fixed;
+	width: 50vw;
+	height: 100%;
+	overflow-y: scroll;
+	padding-bottom: 25px;
+}
+
+#window-right {
+	background: #eee;
+	position: fixed;
+	left: 50vw;
+	width: 50vw;
+	min-height: 100vh;
+}
+
+#title {
+	padding-left: 15px;
+	margin-bottom: 20vh;
+}

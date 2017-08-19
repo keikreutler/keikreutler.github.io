@@ -3,18 +3,9 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
-
-/* THANKS */
-  Names (& URL):
-
-/* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Developer: Kei Kreutler
+  Site: http://kei.bio
+  Twitter: http://twitter.com/keikreutler
 
 
 
