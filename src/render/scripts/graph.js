@@ -49,49 +49,49 @@ var nodes = [{
 	group: 1,
 	label: "OSO",
 	level: 3,
-	url: "/projects/open-space-observatory"
+	url: "/projects/open-space-observatory/"
 }, {
 	id: "proximity",
 	group: 1,
 	label: "PROXIMITY",
 	level: 3,
-	url: "/projects/proximity"
+	url: "/projects/proximity/"
 }, {
 	id: "unmonastery",
 	group: 1,
 	label: "UNMONASTERY",
 	level: 3,
-	url: "/projects/unmonastery"
+	url: "/projects/unmonastery/"
 }, {
 	id: "patternist",
 	group: 1,
 	label: "PATTERNIST",
 	level: 3,
-	url: "/projects/patternist"
+	url: "/projects/patternist/"
 }, {
 	id: "forever_alpha",
 	group: 1,
 	label: "FOREVER ALPHA",
 	level: 3,
-	url: "/projects/forever-alpha"
+	url: "/projects/forever-alpha/"
 }, {
 	id: "transformap",
 	group: 1,
 	label: "TRANSFORMAP",
 	level: 3,
-	url: "http://transformap.co"
+	url: "http://transformap.co/"
 }, {
 	id: "memory_palace",
 	group: 1,
 	label: "MEMORY PALACE",
 	level: 3,
-	url: "/projects/studio-practice"
+	url: "/projects/studio-practice/"
 }, {
 	id: "second_foundation",
 	group: 1,
 	label: "SECOND FOUNDATION",
 	level: 3,
-	url: "/projects/studio-practice"
+	url: "/projects/studio-practice/"
 }]
 var links = [{
 		target: "practice",

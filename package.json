@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "docpad": "~6.74.0",
-    "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-cleanurls": "~2.10.0",
     "docpad-plugin-downloader": "~2.1.4",
     "docpad-plugin-eco": "~2.1.0",
     "docpad-plugin-ghpages": "~2.6.1",
