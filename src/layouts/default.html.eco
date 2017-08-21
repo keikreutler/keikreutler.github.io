@@ -34,26 +34,25 @@
 </head>
 <body>
 
-	<div id="window-left">
-		<div id="title" class="container">
-			<div class="row">
-				<a href="/">
-					<h1>
-						Kei Kreutler
-					</h1>
-				</a>
-			</div>
-		</div>
-
-		<div class="container">
-			<!-- Content -->
-			<%- @content %>
+<div id="window-left">
+	<div class="container" id="title">
+		<div class="row">
+			<a href="/">
+			<h1>Kei Kreutler</h1></a>
 		</div>
 	</div>
 
-	<div id="window-right">
-		<svg preserveAspectRatio="xMidYMid"></svg>
+
+	<div class="container">
+		<!-- Content -->
+		<%- @content %>
 	</div>
+</div>
+
+
+<div id="window-right">
+	<svg preserveaspectratio="xMidYMid"></svg>
+</div>
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
