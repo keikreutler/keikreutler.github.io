@@ -2,10 +2,6 @@
   $("body").hide().delay(1000).fadeIn(500);
 })();
 
-$("#contact").click(function(){
-  $("#contact-info").fadeToggle(300);
-});
-
 
 var nodes = [
   { id: "practice", group: 0, label: "RESEARCH", level: 1 },
