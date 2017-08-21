@@ -1,13 +1,15 @@
-@import "mixins.less";
 
 @beige-1:	#f4d8c2;
 @beige-2:	#edd2b3;
 @beige-3:	#bd9270;
 @text-color: #000;
 
+html {
+	background-color: #000;
+	background-image:url('/images/kk_sm.png');
+}
+
 html, body {
-	//background-color: #000;
-	//background-image:url('/images/kk_sm.png');
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -73,11 +75,36 @@ svg {
 	height: 100%;
 	overflow-y: scroll;
 	img {
-		min-width: 100%;
+		width: 100%;
+
 	}
 }
 
 #title {
 	padding-left: 15px;
 	margin-bottom: 20vh;
+}
+
+.bottom-column {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.project-image-caption {
+	background: #000;
+	color: #FFF;
+	padding: 5px;
+	font-size: 10px;
+	width: 100%;
+	text-align: right;
+}
+
+.project-links {
+	a {
+		font-size: 13px;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
 }

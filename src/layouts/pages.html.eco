@@ -22,6 +22,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
 	<!-- Icons -->
+	<link rel="shortcut icon" href="/images/icon.png">
 
 	<!-- Shims: IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>

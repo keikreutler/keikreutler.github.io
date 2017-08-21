@@ -2,6 +2,10 @@
   $("body").hide().delay(1000).fadeIn(500);
 })();
 
+$("img.lazy").lazyload({
+    effect : "fadeIn",
+    container: $("#window-right")
+});
 
 var nodes = [
   { id: "practice", group: 0, label: "RESEARCH", level: 1 },
