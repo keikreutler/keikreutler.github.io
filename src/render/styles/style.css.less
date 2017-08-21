@@ -5,6 +5,7 @@
 html {
 	background-color: #000;
 	background-image: url('/images/kk_sm.png');
+	pointer-events: all !important;
 }
 
 html,
@@ -55,6 +56,7 @@ svg {
 	text {
 		font-weight: 700;
 		letter-spacing: 2px;
+		pointer-events: all;
 	}
 	.small-viewport({
 		width: 100vw;
@@ -121,4 +123,21 @@ svg {
 		text-transform: uppercase;
 		letter-spacing: 1px;
 	}
+}
+
+.project-label-hide {
+	display: none;
+}
+
+#project-label-show {
+	cursor: pointer;
+	display: inline;
+}
+
+#project-label-show:hover {
+	opacity: 0.5;
+}
+
+circle {
+	cursor: pointer;
 }

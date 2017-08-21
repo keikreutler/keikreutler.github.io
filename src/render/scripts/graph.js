@@ -48,42 +48,50 @@ var nodes = [{
 	id: "oso",
 	group: 1,
 	label: "OSO",
-	level: 3
+	level: 3,
+	url: "/projects/open-space-observatory"
 }, {
 	id: "proximity",
 	group: 1,
 	label: "PROXIMITY",
-	level: 3
+	level: 3,
+	url: "/projects/proximity"
 }, {
 	id: "unmonastery",
 	group: 1,
 	label: "UNMONASTERY",
-	level: 3
+	level: 3,
+	url: "/projects/unmonastery"
 }, {
 	id: "patternist",
 	group: 1,
 	label: "PATTERNIST",
-	level: 3
+	level: 3,
+	url: "/projects/patternist"
 }, {
 	id: "forever_alpha",
 	group: 1,
 	label: "FOREVER ALPHA",
-	level: 3
+	level: 3,
+	url: "/projects/forever-alpha"
 }, {
 	id: "transformap",
 	group: 1,
 	label: "TRANSFORMAP",
-	level: 3
+	level: 3,
+	url: "http://transformap.co"
 }, {
 	id: "memory_palace",
 	group: 1,
 	label: "MEMORY PALACE",
-	level: 3
+	level: 3,
+	url: "/projects/studio-practice"
 }, {
 	id: "second_foundation",
 	group: 1,
 	label: "SECOND FOUNDATION",
-	level: 3
+	level: 3,
+	url: "/projects/studio-practice"
 }]
 var links = [{
 		target: "practice",
@@ -211,6 +219,12 @@ function getLinkColor(node, link) {
 function getTextColor(node, neighbors) {
 	return Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1 ? 'blue' : 'black'
 }
+
+function addTextClass(node, neighbors) {
+	if (Array.isArray(neighbors) && neighbors.indexOf(node.id) > -1) {
+		return 'project-label-show';
+	}
+}
 var width;
 var height = window.innerHeight
 if (window.innerWidth < 768) {
@@ -219,9 +233,12 @@ if (window.innerWidth < 768) {
 	width = window.innerWidth / 2
 }
 var svg = d3.select('svg')
+
+
 svg.attr('width', width)
 	.attr('height', height)
-	// simulation setup with all forces
+
+// simulation setup with all forces
 var linkForce = d3.forceLink()
 	.id(function(link) {
 		return link.id 
@@ -262,6 +279,9 @@ function selectNode(selectedNode) {
 	textElements.attr('fill', function(node) {
 		return getTextColor(node, neighbors)
 	})
+	textElements.attr('id', function(node) {
+		return addTextClass(node, neighbors)
+	})
 	linkElements.attr('stroke', function(link) {
 		return getLinkColor(selectedNode, link)
 	})
@@ -274,6 +294,7 @@ var linkElements = svg.append("g")
 	.append("line")
 	.attr("stroke-width", 1)
 	.attr("stroke", "rgba(50, 50, 50, 0.2)")
+
 var nodeElements = svg.append("g")
 	.attr("class", "nodes")
 	.selectAll("circle")
@@ -284,6 +305,7 @@ var nodeElements = svg.append("g")
 	.attr("fill", getNodeColor)
 	.call(dragDrop)
 	.on('click', selectNode)
+
 var textElements = svg.append("g")
 	.attr("class", "texts")
 	.selectAll("text")
@@ -291,20 +313,26 @@ var textElements = svg.append("g")
 	.enter()
 	.append("text")
 	.text(function(node) {
-		if (node.level === 1) {
-			return node.label
-		};
-		if (node.level === 2) {
-			return node.label;
-		}
+		return node.label
+	})
+	.attr("class", function(node) {
 		if (node.level === 3) {
-			return;
+			return "project-label-hide";
 		}
 	})
 	.attr("font-size", 12)
 	.attr("text-anchor", "middle")
 	.attr("dx", 0)
 	.attr("dy", -15)
+	.on("click", function(node) {
+		if (node.level === 3) {
+			$(location)
+				.attr('href', node.url);
+			window.location = node.url;
+		}
+	})
+
+
 simulation.nodes(nodes)
 	.on('tick', () => {
 		nodeElements.attr('cx', function(node) {
