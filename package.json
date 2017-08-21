@@ -1,50 +1,12 @@
 {
-  "name": "twitter-bootstrap.docpad",
-  "version": "0.10.0",
-  "description": "Bootstrap skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.",
-  "homepage": "https://github.com/bevry/twitter-bootstrap.docpad",
-  "keywords": [
-    "docpad-skeleton",
-    "docpad",
-    "website",
-    "bootstrap"
-  ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
-  "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-  ],
-  "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-  ],
-  "bugs": {
-    "url": "https://github.com/docpad/twitter-bootstrap.docpad/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/docpad/twitter-bootstrap.docpad.git"
-  },
-  "engines": {
-    "node": "0.10",
-    "npm": "1.2"
-  },
+  "name": "no-skeleton.docpad",
+  "version": "0.1.0",
+  "description": "New DocPad project without using a skeleton",
   "dependencies": {
-    "docpad": "~6.74.0",
-    "docpad-plugin-cleanurls": "~2.10.0",
-    "docpad-plugin-downloader": "~2.1.4",
-    "docpad-plugin-eco": "~2.1.0",
-    "docpad-plugin-ghpages": "~2.6.1",
-    "docpad-plugin-less": "~2.5.1",
-    "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-partials": "~2.9.2",
-    "docpad-plugin-related": "~2.2.2",
-    "docpad-plugin-stylus": "~2.13.0",
-    "docpad-plugin-text": "~2.3.3"
+    "docpad": "~6.79.4"
   },
-  "devDependencies": {
-    "docpad-plugin-livereload": "~2.6.1"
-  },
-  "main": "node_modules/docpad/bin/docpad-server",
+  "main": "node_modules/.bin/docpad-server",
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
+    "start": "node_modules/.bin/docpad-server"
   }
 }
