@@ -55,6 +55,7 @@ docpadConfig = {
 				"//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"
 				"//d3js.org/d3.v4.min.js"
+				"/scripts/waypoints.js"
 				"/scripts/graph.js"
 			]
 
