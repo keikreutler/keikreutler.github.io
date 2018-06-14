@@ -321,6 +321,9 @@ var textElements = svg.append("g")
 		if (node.level === 3) {
 			return "project-label-hide";
 		}
+		if (node.level === 2) {
+			return "project-label-hide";
+		}
 	})
 	.attr("font-size", 12)
 	.attr("text-anchor", "middle")

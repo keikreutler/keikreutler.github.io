@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "New DocPad project without using a skeleton",
   "dependencies": {
-    "docpad": "~6.79.4"
+    "docpad": "~6.79.4",
+    "docpad-plugin-cleanurls": "~2.11.0",
+    "docpad-plugin-eco": "~2.2.1",
+    "docpad-plugin-ghpages": "~2.6.1",
+    "docpad-plugin-less": "~2.5.1"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
