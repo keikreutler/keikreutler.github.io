@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to bottom right, #fff, #E5D3B3);
+	color: #664229;
+	font-family: 'EB Garamond';
+	font-size: 22px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+h1, h2, h3 {
+	margin: 10px 0;
+	font-family: 'Didact Gothic';
+	font-weight: 400;
+}
+
+a {
+	color: #664229;     
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	background-color: #987554;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+img {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	margin: 20px auto;
+	width: 85%;
+	max-width: 1100px;
+}
+
+
+.column-full, .column-half, .column-one-third, .column-two-thirds {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.column-full {
+	flex: 0 0 100%;
+}
+
+.column-half {
+	flex: 0 0 calc(50% - 20px);
+}
+
+.column-one-third {
+	flex: 0 0 calc(33.333% - 20px);
+}
+
+.column-two-thirds {
+	flex: 0 0 calc(66.666% - 20px);
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+	.column-half, .column-full, .column-one-third {
+		flex-basis: 100%;
+	}
+	img {
+		margin: 0;
+		width: 100%;
+	}
+	.hide {
+		display: none;
+	}
+}
