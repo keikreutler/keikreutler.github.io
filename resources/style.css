@@ -21,7 +21,6 @@ body {
 
 h1, h2, h3 {
 	margin: 10px 0;
-	/* font-family: 'Didact Gothic';*/
 	font-weight: 400;
 }
 
@@ -83,7 +82,7 @@ img {
 		flex-basis: 100%;
 	}
 	body {
-		/*font-size: 18px;*/
+		font-size: 18px;
 	}
 	img {
 		margin: 0;
